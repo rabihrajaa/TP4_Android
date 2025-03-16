@@ -1,8 +1,4 @@
 
----
-
-### **README.md**  
-
 # 🚦 Feu Tricolore & Carrefour - Jetpack Compose 🚗  
 
 ## 📌 Description  
