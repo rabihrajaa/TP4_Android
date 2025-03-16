@@ -11,18 +11,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Text(
-                text = "Bonjour tout le monde !",
-                fontWeight = FontWeight.Bold,
-                fontSize = 32.sp,
-                color = Color.Magenta
-            )
+            Accueil(name = "numéro 6")
         }
 //        enableEdgeToEdge()
 //        setContent {
@@ -56,6 +52,25 @@ class MainActivity : ComponentActivity() {
 //}
 
 @Composable
-fun Accueil(name: String) {
-    Text(text = "Bonjour $name",fontSize=20.sp)
+fun Accueil(name:String,modifier:Modifier=Modifier){
+    ElevatedCard{
+        Column(
+            modifier=modifier.padding(8.dp),
+            horizontalAlignment=Alignment.CenterHorizontally
+        ){
+            Text(
+                text="Bonjour$name",
+                fontSize=20.sp,
+                modifier=Modifier.padding(12.dp))
+            Text(text="Jevoisdegrandsprogrès",color=Color.Blue)
+        }
+    }
+}
+@Preview
+@Composable
+fun AccueilPreview(){
+    Column{
+        Accueil(name="numéro10",modifier=Modifier.fillMaxWidth())
+        Accueil(name="numéro6") //valeurpardéfautdumodifier
+    }
 }
