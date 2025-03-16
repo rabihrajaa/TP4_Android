@@ -75,7 +75,7 @@ git push -u origin main   # Pousser le projet vers GitHub
 - **Contrôleur** (`CarrefourViewModel.kt`) : Gère les règles de transition  
 
 ## 📷 Aperçu de l’interface
-
+![Feu Tricolore](interface_feu.png)
 ## 👤 Auteur  
 👩‍💻 **Rajaa Rabih**  
 ✉️ Contact : rajaarabihh@gmai.com
