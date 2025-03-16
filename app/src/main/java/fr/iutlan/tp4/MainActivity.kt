@@ -3,23 +3,28 @@ package fr.iutlan.tp4
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import fr.iutlan.tp4.feu3.ui.MainActivityFeu3View
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Accueil(name = "numéro 6")
+            MaterialTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    MainActivityFeu3View()
+                }
+            }
         }
+    }
+}
+
 //        enableEdgeToEdge()
 //        setContent {
 //            TP4Theme {
@@ -32,8 +37,8 @@ class MainActivity : ComponentActivity() {
 //            }
 //        }
 
-    }
-}
+//    }
+//}
 //
 //@Composable
 //fun Greeting(name: String, modifier: Modifier = Modifier) {
@@ -51,26 +56,43 @@ class MainActivity : ComponentActivity() {
 //    }
 //}
 
-@Composable
-fun Accueil(name:String,modifier:Modifier=Modifier){
-    ElevatedCard{
-        Column(
-            modifier=modifier.padding(8.dp),
-            horizontalAlignment=Alignment.CenterHorizontally
-        ){
-            Text(
-                text="Bonjour$name",
-                fontSize=20.sp,
-                modifier=Modifier.padding(12.dp))
-            Text(text="Jevoisdegrandsprogrès",color=Color.Blue)
-        }
-    }
-}
-@Preview
-@Composable
-fun AccueilPreview(){
-    Column{
-        Accueil(name="numéro10",modifier=Modifier.fillMaxWidth())
-        Accueil(name="numéro6") //valeurpardéfautdumodifier
-    }
-}
+//@Composable
+//fun Accueil(name:String,modifier:Modifier=Modifier){
+//    ElevatedCard{
+//        Column(
+//            modifier=modifier.padding(8.dp),
+//            horizontalAlignment=Alignment.CenterHorizontally
+//        ){
+//            Text(
+//                text="Bonjour$name",
+//                fontSize=20.sp,
+//                modifier=Modifier.padding(12.dp))
+//            Text(text="Jevoisdegrandsprogrès",color=Color.Blue)
+//        }
+//    }
+//}
+//@Preview
+//@Composable
+//fun AccueilPreview(){
+//    Column{
+//        Accueil(name="numéro10",modifier=Modifier.fillMaxWidth())
+//        Accueil(name="numéro6") //valeurpardéfautdumodifier
+//    }
+//}
+
+//@Composable
+//fun AccueilMultipleSeulementJ(names: List<String>) {
+//    Column {
+//        for (name in names) {
+//            if (name.startsWith("j")) {
+//                Text(text = "Bonjour $name !",modifier=Modifier.padding(4.dp))
+//            }
+//        }
+//    }
+//}
+//@Preview
+//@Composable
+//fun AccueilMultipleSeulementJPreview() {
+//    AccueilMultipleSeulementJ(listOf("paul", "jean", "pierre", "jacques"))
+//}
+
