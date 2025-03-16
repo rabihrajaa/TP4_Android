@@ -76,7 +76,7 @@ git push -u origin main   # Pousser le projet vers GitHub
 
 ## 📷 Aperçu de l’interface
 
-<img src="interface_feu.png" alt="Feu Tricolore" style="width: 100px; height: auto;">
+<img src="interface_feu.png" alt="Feu Tricolore" style="width: 200px; height: auto;">
 
 
 ## 👤 Auteur  
