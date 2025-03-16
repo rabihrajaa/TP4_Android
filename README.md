@@ -70,13 +70,14 @@ git push -u origin main   # Pousser le projet vers GitHub
 - **Contrôleur** (`Feu3ViewModel.kt`) : Gère les transitions entre états  
 
 ### 🔹 **2. Carrefour avec plusieurs feux**  
-- **Modèle** (`CarrefourState.kt`) : Gère l’état de 3 feux simultanément  
+- **Modèle** (`CarrefourState.kt`) : Gère l’état de 4 feux simultanément  
 - **Vue** (`CarrefourView.kt`) : Affichage du carrefour  
 - **Contrôleur** (`CarrefourViewModel.kt`) : Gère les règles de transition  
 
 ## 📷 Aperçu de l’interface
 
 <img src="interface_feu.png" alt="Feu Tricolore" style="width: 200px; height: auto;">
+<img src="interface_carrefour.png" alt="Feu Tricolore" style="width: 200px; height: auto;">
 
 
 ## 👤 Auteur  
