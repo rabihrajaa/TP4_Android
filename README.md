@@ -70,7 +70,7 @@ git push -u origin main   # Pousser le projet vers GitHub
 - **Contrôleur** (`Feu3ViewModel.kt`) : Gère les transitions entre états  
 
 ### 🔹 **2. Carrefour avec plusieurs feux**  
-- **Modèle** (`CarrefourState.kt`) : Gère l’état de 4 feux simultanément  
+- **Modèle** (`CarrefourState.kt`) : Gère l’état de 3 feux simultanément  
 - **Vue** (`CarrefourView.kt`) : Affichage du carrefour  
 - **Contrôleur** (`CarrefourViewModel.kt`) : Gère les règles de transition  
 
